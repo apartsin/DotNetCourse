@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enterprise Software Engineering with C# and .NET (HIT)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topnav"><div class="inner">
+  <a class="brand" href="index.html">Enterprise Software Engineering with C# and .NET <span>&middot; HIT</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#prereq">Prerequisites</a>
+    <a href="#weekly">Weekly materials</a>
+    <a href="#project">Project</a>
+    <a href="#references">References</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+
+  <div class="hero">
+    <img class="hitlogo" src="hit-logo.png" alt="Holon Institute of Technology">
+    <p class="eyebrow">CS 3xx &middot; HIT &middot; Advanced Course &middot; Year 3 &middot; 13 Weeks</p>
+    <h1>Enterprise Software Engineering with C# and .NET</h1>
+    <p class="heb" lang="he">הנדסת תוכנה ארגונית עם C# ו-.NET</p>
+    <p class="sub">Architecture, use cases, design patterns, AI APIs, and enterprise best practices</p>
+    <div class="meta">
+      <span><b>Prerequisites:</b> Programming, basic OOP, databases, basic web development</span>
+      <span><b>Required for:</b> software-engineering and backend-development specializations</span>
+      <span><b>Feeds into:</b> capstone projects, backend roles, and architecture-oriented internships</span>
+      <span><b>Format:</b> 2 h lecture + 2 h practice, one integrative team project</span>
+      <span><b>Assessment:</b> a running project presented three times, no written exams</span>
+    </div>
+  </div>
+
+  <h2>About this course</h2>
+  <p>This is the advanced course on designing and building enterprise-grade backend systems with <b>C# and modern .NET</b>. Students move beyond isolated programming exercises into the engineering discipline of domain modelling, use-case design, API boundaries, persistence, validation, security, testing, architecture documentation, and maintainable code. The emphasis is on building systems whose design can be explained, reviewed, tested, extended, and defended.</p>
+  <p><b>No prior .NET experience is assumed.</b> Students arrive with programming, basic OOP, database, and web foundations. The course builds the .NET foundations early, then uses one running project to introduce architecture styles, enterprise design patterns, robust API design, security, testing, and AI API integration through explicit application boundaries.</p>
+  <p><b>Rationale.</b> Enterprise software is not only about making endpoints respond. It is about aligning business use cases, domain rules, persistence, external integrations, quality attributes, and team-readable code. This course provides a shared engineering base for students who will build backend systems, distributed applications, AI-enabled services, and capstone projects in realistic organizational settings.</p>
+
+  <h2>Course format</h2>
+  <p>Each week is <b>4 contact hours</b>: a <b>2-hour lecture</b> for concepts, architecture, and design reasoning, and a <b>2-hour practice session</b> at the keyboard. There are no separate weekly labs: each practice session closes with a <b>project-integration brief</b>, the increment every team adds to its semester system that week. The thirteen weeks form six parts: C# and .NET Foundations (weeks 1 to 2), API and Persistence (3 to 4), Architecture and Patterns (5 to 8), Domain Logic and Security (9 to 10), Testing and AI Integration (11 to 12), and Final Architectural Defense (13). The running project is presented to the class three times, in the <b>Student Project Presentations</b>: a proposal (week 5), an interim review (week 8), and a final project defense (week 13).</p>
+  <div class="layers">
+    <div class="layer l1"><span class="nm">.NET Core</span><span class="ds">Modern C#, records, generics, LINQ, async, dependency injection, configuration.</span></div>
+    <div class="layer l2"><span class="nm">API &amp; Data</span><span class="ds">ASP.NET Core Web API, DTOs, validation, EF Core, migrations, relational modelling.</span></div>
+    <div class="layer l3"><span class="nm">Architecture</span><span class="ds">Layered architecture, Clean Architecture, modular monoliths, use cases, boundaries.</span></div>
+    <div class="layer l4"><span class="nm">Patterns</span><span class="ds">Repository, Unit of Work, Factory, Strategy, Adapter, Decorator, Mediator, CQRS.</span></div>
+    <div class="layer l5"><span class="nm">Quality</span><span class="ds">Testing, security, logging, error handling, documentation, architectural tradeoffs.</span></div>
+    <div class="layer l6"><span class="nm">AI APIs</span><span class="ds">Microsoft.Extensions.AI, Semantic Kernel, OpenAI .NET SDK, embeddings, tool calling.</span></div>
+  </div>
+
+  <h2>Expected outcomes</h2>
+  <p>By the end of the course, students will be able to:</p>
+  <div class="ocards">
+    <div class="ocard"><span class="n">1</span><span class="oi">&#128187;</span><span class="ot">Develop enterprise applications using C#, modern .NET, and ASP.NET Core.</span></div>
+    <div class="ocard"><span class="n">2</span><span class="oi">&#128279;</span><span class="ot">Design RESTful APIs with explicit DTOs, validation, versioning, and error handling.</span></div>
+    <div class="ocard"><span class="n">3</span><span class="oi">&#129518;</span><span class="ot">Use Entity Framework Core for persistence, migrations, relationships, and database access.</span></div>
+    <div class="ocard"><span class="n">4</span><span class="oi">&#127959;&#65039;</span><span class="ot">Structure applications with layered architecture, Clean Architecture, and modular design.</span></div>
+    <div class="ocard"><span class="n">5</span><span class="oi">&#128736;&#65039;</span><span class="ot">Apply enterprise design patterns where they clarify boundaries and reduce coupling.</span></div>
+    <div class="ocard"><span class="n">6</span><span class="oi">&#128274;</span><span class="ot">Implement authentication, authorization, validation, logging, and global error handling.</span></div>
+    <div class="ocard"><span class="n">7</span><span class="oi">&#129514;</span><span class="ot">Write unit, integration, and architecture tests for business logic and API behavior.</span></div>
+    <div class="ocard"><span class="n">8</span><span class="oi">&#129504;</span><span class="ot">Integrate AI APIs and .NET AI libraries behind testable application boundaries.</span></div>
+    <div class="ocard"><span class="n">9</span><span class="oi">&#128220;</span><span class="ot">Document architecture decisions with diagrams, ADRs, pattern explanations, and tradeoffs.</span></div>
+    <div class="ocard"><span class="n">10</span><span class="oi">&#127891;</span><span class="ot">Defend a complete enterprise application from use case to implementation detail.</span></div>
+  </div>
+
+  <h2 id="prereq">Prerequisites: review and self-check</h2>
+  <p>The course assumes prior programming and basic software-development experience. Each row lists the background students should review before Week 1.</p>
+  <table class="prereqs">
+    <thead><tr><th>Subject</th><th>Background topics</th><th>Material</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="subj"><span class="pi">&#128295;</span>Programming &amp; version control</td>
+        <td class="top">C-style syntax or Java/C# familiarity, Git, pull requests, unit testing, code review, reading a stack trace</td>
+        <td class="lk"><a href="#prereq">Review</a><a href="#prereq">Self-check</a></td>
+      </tr>
+      <tr>
+        <td class="subj"><span class="pi">&#9881;&#65039;</span>Web &amp; databases</td>
+        <td class="top">HTTP and REST, JSON, relational tables, keys, joins, transactions, basic SQL</td>
+        <td class="lk"><a href="#prereq">Review</a><a href="#prereq">Self-check</a></td>
+      </tr>
+      <tr>
+        <td class="subj"><span class="pi">&#127959;&#65039;</span>Software engineering</td>
+        <td class="top">Object-oriented design, interfaces, separation of concerns, basic UML or C4-style diagrams</td>
+        <td class="lk"><a href="#prereq">Review</a><a href="#prereq">Self-check</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="weekly">Weekly materials</h2>
+  <p>Each week lists two sets of topics: what the lecture covers on the board, and what the practice session teaches at the keyboard. In the highlighted weeks the practice slot is a <b>Student Project Presentation</b>: fully student-run, no instructor material.</p>
+  <table class="weeks">
+    <thead><tr><th>Wk</th><th>Topic</th><th>Materials</th></tr></thead>
+    <tbody>
+      <tr class="part"><td colspan="3">Part I &middot; C# and .NET Foundations</td></tr>
+      <tr>
+        <td class="wk">1</td>
+        <td class="t"><b>Introduction to Enterprise Software Engineering with .NET</b>
+          <span class="lp"><i>Lecture</i> Enterprise systems, .NET ecosystem, solution structure, project workflow, business domains, use cases.</span>
+          <span class="lp pr"><i>Practice</i> Create the project repository and solution; form teams; choose a domain; draft first use cases.</span>
+          <span class="lp tl"><i>Tools</i> .NET SDK &middot; Visual Studio / Rider / VS Code &middot; Git &middot; GitHub</span></td>
+        <td class="lk"><a href="lessons/week01.html">Lesson plan</a><a href="lessons/week01.html#practice">Practice</a></td>
+      </tr>
+      <tr>
+        <td class="wk">2</td>
+        <td class="t"><b>Modern C# for Enterprise Domain Models</b>
+          <span class="lp"><i>Lecture</i> Records, nullable reference types, generics, LINQ, exceptions, async and await, value objects, invariants.</span>
+          <span class="lp pr"><i>Practice</i> Model initial domain entities and value objects; write first domain services and tests.</span>
+          <span class="lp tl"><i>Tools</i> C# 12+ &middot; xUnit &middot; FluentAssertions</span></td>
+        <td class="lk"><a href="lessons/week02.html">Lesson plan</a><a href="lessons/week02.html#practice">Practice</a></td>
+      </tr>
+
+      <tr class="part"><td colspan="3">Part II &middot; API and Persistence</td></tr>
+      <tr>
+        <td class="wk">3</td>
+        <td class="t"><b>SOLID Principles and Clean Code</b>
+          <span class="lp"><i>Lecture</i> SOLID, dependency inversion, naming, refactoring, cohesion, coupling, maintainability.</span>
+          <span class="lp pr"><i>Practice</i> Refine the domain model; identify service boundaries; refactor toward testable components.</span>
+          <span class="lp tl"><i>Tools</i> .NET test runner &middot; code analyzers &middot; architecture sketches</span></td>
+        <td class="lk"><a href="lessons/week03.html">Lesson plan</a><a href="lessons/week03.html#practice">Practice</a></td>
+      </tr>
+      <tr>
+        <td class="wk">4</td>
+        <td class="t"><b>ASP.NET Core Web API</b>
+          <span class="lp"><i>Lecture</i> Controllers, Minimal APIs, routing, middleware, dependency injection, Swagger, OpenAPI.</span>
+          <span class="lp pr"><i>Practice</i> Build first working endpoints; define DTOs; add validation and consistent API responses.</span>
+          <span class="lp tl"><i>Tools</i> ASP.NET Core &middot; Swagger / OpenAPI &middot; FluentValidation</span></td>
+        <td class="lk"><a href="lessons/week04.html">Lesson plan</a><a href="lessons/week04.html#practice">Practice</a></td>
+      </tr>
+
+      <tr class="part"><td colspan="3">Part III &middot; Architecture and Patterns</td></tr>
+      <tr>
+        <td class="wk">5</td>
+        <td class="t"><b>Proposal Presentations and EF Core</b>
+          <span class="lp"><i>Lecture</i> DbContext, entities, relationships, migrations, query shape, persistence boundaries.</span>
+          <span class="pres">&#127908; Student Project Presentation 1 &middot; Proposal</span>
+          <span class="lp tl"><i>Tools</i> Entity Framework Core &middot; SQL Server / PostgreSQL &middot; migrations</span></td>
+        <td class="lk"><a href="lessons/week05.html">Lesson plan</a><a href="lessons/week05.html#practice">Presentation brief</a></td>
+      </tr>
+      <tr>
+        <td class="wk">6</td>
+        <td class="t"><b>Layered Architecture and Application Structure</b>
+          <span class="lp"><i>Lecture</i> Presentation, application, domain, infrastructure, DTOs, services, use cases.</span>
+          <span class="lp pr"><i>Practice</i> Reorganize the project into layers; move persistence and external concerns behind interfaces.</span>
+          <span class="lp tl"><i>Tools</i> solution folders &middot; project references &middot; dependency rules</span></td>
+        <td class="lk"><a href="lessons/week06.html">Lesson plan</a><a href="lessons/week06.html#practice">Practice</a></td>
+      </tr>
+      <tr>
+        <td class="wk">7</td>
+        <td class="t"><b>Enterprise Design Patterns I</b>
+          <span class="lp"><i>Lecture</i> Repository, Unit of Work, Factory, Strategy, Adapter, Decorator, dependency injection.</span>
+          <span class="lp pr"><i>Practice</i> Implement two patterns with tests; document why each pattern fits the use case.</span>
+          <span class="lp tl"><i>Tools</i> DI container &middot; interfaces &middot; pattern notes</span></td>
+        <td class="lk"><a href="lessons/week07.html">Lesson plan</a><a href="lessons/week07.html#practice">Practice</a></td>
+      </tr>
+      <tr>
+        <td class="wk">8</td>
+        <td class="t"><b>Midterm Presentations and Clean Architecture</b>
+          <span class="lp"><i>Lecture</i> Dependency rules, use cases, ports and adapters, modular monoliths, package boundaries.</span>
+          <span class="pres">&#127908; Student Project Presentation 2 &middot; Interim</span>
+          <span class="lp tl"><i>Tools</i> Clean Architecture &middot; C4 diagrams &middot; ADRs</span></td>
+        <td class="lk"><a href="lessons/week08.html">Lesson plan</a><a href="lessons/week08.html#practice">Presentation brief</a></td>
+      </tr>
+
+      <tr class="part"><td colspan="3">Part IV &middot; Domain Logic and Security</td></tr>
+      <tr>
+        <td class="wk">9</td>
+        <td class="t"><b>Domain-Driven Design and Business Logic</b>
+          <span class="lp"><i>Lecture</i> Entities, value objects, aggregates, domain services, domain events, invariants, business rules.</span>
+          <span class="lp pr"><i>Practice</i> Strengthen workflows and domain rules; add use-case tests around business behavior.</span>
+          <span class="lp tl"><i>Tools</i> domain model &middot; use-case services &middot; event sketches</span></td>
+        <td class="lk"><a href="lessons/week09.html">Lesson plan</a><a href="lessons/week09.html#practice">Practice</a></td>
+      </tr>
+      <tr>
+        <td class="wk">10</td>
+        <td class="t"><b>Security, Validation, and Robust API Design</b>
+          <span class="lp"><i>Lecture</i> Authentication, authorization, JWT, roles, claims, input validation, global error handling.</span>
+          <span class="lp pr"><i>Practice</i> Secure selected endpoints; add authorization policies, validation filters, and error response contracts.</span>
+          <span class="lp tl"><i>Tools</i> ASP.NET Core Identity / JWT &middot; authorization policies &middot; problem details</span></td>
+        <td class="lk"><a href="lessons/week10.html">Lesson plan</a><a href="lessons/week10.html#practice">Practice</a></td>
+      </tr>
+
+      <tr class="part"><td colspan="3">Part V &middot; Testing and AI Integration</td></tr>
+      <tr>
+        <td class="wk">11</td>
+        <td class="t"><b>Testing Enterprise Applications</b>
+          <span class="lp"><i>Lecture</i> Unit tests, integration tests, mocking, test doubles, test data, architecture tests.</span>
+          <span class="lp pr"><i>Practice</i> Build a test suite for core business logic and API behavior; add architecture-rule checks.</span>
+          <span class="lp tl"><i>Tools</i> xUnit &middot; Moq / NSubstitute &middot; Testcontainers &middot; WebApplicationFactory</span></td>
+        <td class="lk"><a href="lessons/week11.html">Lesson plan</a><a href="lessons/week11.html#practice">Practice</a></td>
+      </tr>
+      <tr>
+        <td class="wk">12</td>
+        <td class="t"><b>AI API Integration and Enterprise Best Practices</b>
+          <span class="lp"><i>Lecture</i> AI clients, adapters, streaming, embeddings, tool calling, prompt ownership, evaluation, rate limits.</span>
+          <span class="lp pr"><i>Practice</i> Add an optional AI-backed use case or write an integration design with clear boundaries and tests.</span>
+          <span class="lp tl"><i>Tools</i> Microsoft.Extensions.AI &middot; Semantic Kernel &middot; OpenAI .NET SDK &middot; Azure.AI.OpenAI</span></td>
+        <td class="lk"><a href="lessons/week12.html">Lesson plan</a><a href="lessons/week12.html#practice">Practice</a></td>
+      </tr>
+
+      <tr class="part"><td colspan="3">Part VI &middot; Final Architectural Defense</td></tr>
+      <tr>
+        <td class="wk">13</td>
+        <td class="t"><b>Final Student Presentations</b>
+          <span class="lp"><i>Lecture</i> Final demo, architecture review, code quality, testing, design decisions, lessons learned.</span>
+          <span class="pres">&#127908; Student Project Presentation 3 &middot; Final (with oral defense)</span>
+          <span class="lp tl"><i>Tools</i> architecture document &middot; ADRs &middot; test report &middot; final slides</span></td>
+        <td class="lk"><a href="lessons/week13.html">Lesson plan</a><a href="lessons/week13.html#practice">Presentation brief</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="ai-usage">AI usage</h2>
+  <p>Using an AI assistant is <b>encouraged</b> in this course; it reflects how modern software engineering is increasingly done. Two conditions keep the learning genuine: students keep <b>full ownership of, and responsibility for, everything they submit</b>, and must be able to <b>explain and defend</b> any part of it. Where an assistant was used, it should be disclosed in the project notes.</p>
+  <p>Every weekly project increment follows a three-part model:</p>
+  <div class="steps">
+    <div class="step a"><h3><span class="tag">Part A &middot; AI assistant welcome</span>Build</h3><p>Use an assistant to explore framework APIs, draft tests, generate examples, compare designs, or find refactoring options.</p></div>
+    <div class="step b"><h3><span class="tag">Part B &middot; verification required</span>Test &amp; inspect</h3><p>Run the code, read it, check edge cases, remove secrets from prompts, and make sure generated code matches the architecture.</p></div>
+    <div class="step c"><h3><span class="tag">Part C &middot; in plain language</span>Review &amp; defend</h3><p>Explain the design and its tradeoffs, where it would fail, and why each pattern or boundary belongs in the system.</p></div>
+  </div>
+
+  <h2>Assessment and grading</h2>
+  <p>Grading is project-based, with weight on architecture, reasoning, tests, maintainability, use-case coverage, and the ability to defend design decisions. The running project is the single deliverable, built up in weekly increments and graded at the three Student Project Presentations. There are no written exams and no separate lab submissions.</p>
+  <table class="gtab">
+    <thead><tr><th>Component</th><th>What it covers</th><th>Weight</th></tr></thead>
+    <tbody>
+      <tr><td><b>Project &middot; Proposal</b></td><td>Student Project Presentation 1: problem, domain, use cases, architecture plan, data model, technical risks (week 5).</td><td class="pct">20%</td></tr>
+      <tr><td><b>Project &middot; Interim</b></td><td>Student Project Presentation 2: working API, persistence, architecture, design patterns, business workflows, code structure (week 8).</td><td class="pct">30%</td></tr>
+      <tr><td><b>Project &middot; Final</b></td><td>Student Project Presentation 3: complete system, final architecture, tests, security, documentation, optional AI integration, oral defense (week 13).</td><td class="pct">50%</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="project">The running project</h2>
+  <p class="projmeta">100% of the grade &middot; teams of three or four &middot; presented three times</p>
+  <p>Teams carry a single enterprise application across the semester, integrating most of the covered material into one coherent system: a business domain, use cases, REST API, persistent data model, layered or Clean Architecture structure, enterprise design patterns, security, validation, tests, documentation, and an optional AI-backed use case. Teams choose one of the course domains, <b>order management</b>, <b>course registration</b>, <b>clinic appointments</b>, <b>helpdesk ticketing</b>, <b>inventory management</b>, <b>booking and reservation</b>, <b>portfolio management</b>, or <b>insurance claims</b>, or propose another domain of comparable scope for approval. Whatever the domain, teams must demonstrate architectural maturity, not endpoint count alone. Each presentation is 12 to 15 minutes plus questions, with a short written report and a tagged release of the repository.</p>
+
+  <div class="pcard">
+    <h3><span class="n">P1</span>Student Project Presentation 1 &middot; Proposal</h3>
+    <p class="projmeta">20% of the grade &middot; week 5 &middot; problem, domain, and architecture plan</p>
+    <ul>
+      <li>Project domain, motivation, users, and main use cases.</li>
+      <li>Initial domain model, database entities, and API surface.</li>
+      <li>Planned architecture style and expected design patterns.</li>
+      <li>Main technical risks and development plan.</li>
+    </ul>
+  </div>
+  <div class="pcard">
+    <h3><span class="n">P2</span>Student Project Presentation 2 &middot; Interim</h3>
+    <p class="projmeta">30% of the grade &middot; week 8 &middot; working foundation and architecture review</p>
+    <ul>
+      <li>Working API demo with database integration.</li>
+      <li>Current architecture, layer boundaries, and code structure.</li>
+      <li>Implemented design patterns and core business workflows.</li>
+      <li>Open issues, next steps, and architectural tradeoffs.</li>
+    </ul>
+  </div>
+  <div class="pcard">
+    <h3><span class="n">P3</span>Student Project Presentation 3 &middot; Final</h3>
+    <p class="projmeta">50% of the grade with a short oral defense &middot; week 13 &middot; complete system</p>
+    <ul>
+      <li>Complete working system with a final architecture walkthrough.</li>
+      <li>Main design decisions, enterprise patterns, and use-case coverage.</li>
+      <li>Security, validation, tests, quality assurance, and documentation.</li>
+      <li>Optional AI integration design or implementation, including boundaries and evaluation.</li>
+      <li>Short oral defense: any team member answers on any part of the system.</li>
+    </ul>
+  </div>
+
+  <h3 id="ideas">Example project ideas</h3>
+  <p>Each idea below exercises the course architecture stack; teams may take one as-is or propose a variant of comparable scope.</p>
+  <div class="ocards">
+    <div class="ocard"><span class="oi">&#128230;</span><span class="ot"><b>Order management system.</b> Orders, customers, inventory reservations, status workflows, authorization, and reporting.</span></div>
+    <div class="ocard"><span class="oi">&#127891;</span><span class="ot"><b>Course registration system.</b> Students, courses, prerequisites, registration windows, waitlists, and approval policies.</span></div>
+    <div class="ocard"><span class="oi">&#127973;</span><span class="ot"><b>Clinic appointment system.</b> Patients, doctors, schedules, bookings, reminders, roles, and audit history.</span></div>
+    <div class="ocard"><span class="oi">&#127915;</span><span class="ot"><b>Helpdesk ticketing system.</b> Ticket lifecycle, routing strategies, SLA rules, comments, search, and escalation.</span></div>
+    <div class="ocard"><span class="oi">&#127981;</span><span class="ot"><b>Inventory management system.</b> Warehouses, stock movements, reorder policies, reports, and integration adapters.</span></div>
+    <div class="ocard"><span class="oi">&#128197;</span><span class="ot"><b>Booking platform.</b> Availability, reservations, cancellation rules, payment states, and conflict prevention.</span></div>
+    <div class="ocard"><span class="oi">&#128176;</span><span class="ot"><b>Portfolio management system.</b> Assets, transactions, risk views, reporting, authorization, and external data adapters.</span></div>
+    <div class="ocard"><span class="oi">&#128221;</span><span class="ot"><b>Insurance claims processor.</b> Claims, documents, adjusters, rules, status transitions, and optional AI summarization.</span></div>
+  </div>
+
+  <h2 id="references">References</h2>
+  <p>A curated reading list spanning enterprise architecture, .NET backend engineering, domain modelling, and AI-enabled application design.</p>
+  <div class="refgrid">
+    <div class="refcard"><div class="kind">Architecture</div><div class="body"><a href="https://www.oreilly.com/library/view/software-architecture-the/9781492086888/">Software Architecture: The Hard Parts</a> <span class="by">&middot; Ford, Richards, Sadalage &amp; Dehghani</span><p class="note">Architecture tradeoffs, coupling, service boundaries, and decision analysis for real systems.</p></div></div>
+    <div class="refcard"><div class="kind">Design</div><div class="body"><a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/">Design Patterns</a> <span class="by">&middot; Gamma, Helm, Johnson &amp; Vlissides</span><p class="note">The classic pattern vocabulary behind many enterprise object-oriented designs.</p></div></div>
+    <div class="refcard"><div class="kind">Domain</div><div class="body"><a href="https://www.domainlanguage.com/ddd/">Domain-Driven Design</a> <span class="by">&middot; Eric Evans</span><p class="note">Entities, value objects, aggregates, repositories, services, and domain language.</p></div></div>
+    <div class="refcard"><div class="kind">.NET</div><div class="body"><a href="https://learn.microsoft.com/en-us/aspnet/core/">ASP.NET Core documentation</a> <span class="by">&middot; Microsoft Learn</span><p class="note">Official documentation for ASP.NET Core APIs, middleware, dependency injection, and security.</p></div></div>
+    <div class="refcard"><div class="kind">AI</div><div class="body"><a href="https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai">Microsoft.Extensions.AI</a> <span class="by">&middot; Microsoft Learn</span><p class="note">Provider-neutral abstractions for chat clients, embeddings, tools, and middleware in .NET.</p></div></div>
+    <div class="refcard"><div class="kind">AI</div><div class="body"><a href="https://learn.microsoft.com/en-us/semantic-kernel/">Semantic Kernel</a> <span class="by">&middot; Microsoft Learn</span><p class="note">C# orchestration, plugins, function calling, and agent patterns for AI-enabled applications.</p></div></div>
+  </div>
+
+  <h2 id="tools">Tools and resources</h2>
+  <p>The toolchain mirrors the weekly schedule and keeps attention on .NET, enterprise architecture, and defensible engineering decisions.</p>
+  <ul class="clean">
+    <li><b>C# and .NET:</b> .NET SDK, ASP.NET Core, modern C# language features, dependency injection, configuration.</li>
+    <li><b>Data access:</b> Entity Framework Core, SQL Server or PostgreSQL, migrations, repositories, query design.</li>
+    <li><b>API design:</b> REST, DTOs, validation, Swagger and OpenAPI, global error handling, problem details.</li>
+    <li><b>Architecture:</b> layered architecture, Clean Architecture, modular monoliths, C4 diagrams, ADRs.</li>
+    <li><b>Design patterns:</b> Repository, Unit of Work, Factory, Strategy, Adapter, Decorator, Mediator, CQRS, Specification.</li>
+    <li><b>Testing:</b> xUnit, FluentAssertions, Moq or NSubstitute, WebApplicationFactory, Testcontainers, architecture tests.</li>
+    <li><b>AI APIs and libraries:</b> Microsoft.Extensions.AI, Semantic Kernel, OpenAI .NET SDK, Azure.AI.OpenAI, Azure AI Search, evaluation libraries.</li>
+    <li><b>AI assistant:</b> part of the toolkit, expected for exploration and review, with full student responsibility for submitted work.</li>
+  </ul>
+
+</div>
+
+<footer>Enterprise Software Engineering with C# and .NET &middot; HIT &middot; Advanced Course &middot; course materials</footer>
+
+</body>
+</html>
