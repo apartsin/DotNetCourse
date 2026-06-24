@@ -124,13 +124,19 @@ ul.clean li{ margin:0 0 7px; }
 .weeks{ border-collapse:collapse; width:100%; font-size:.95rem; margin-top:8px; table-layout:fixed; }
 .weeks th{ text-align:left; font-variant:small-caps; letter-spacing:.05em; color:#5a626c; font-weight:700; font-size:.8rem; border-bottom:1.5px solid #111418; padding:7px 10px; }
 .weeks td{ padding:9px 10px; border-top:1px solid #e6e8eb; vertical-align:top; }
-.weeks th:nth-child(1){ width:76px; }
-.weeks th:nth-child(2){ width:58%; }
-.weeks th:nth-child(3){ width:auto; }
+.weeks th:nth-child(1){ width:68px; }
+.weeks th:nth-child(2){ width:38%; }
+.weeks th:nth-child(3){ width:20%; }
+.weeks th:nth-child(4){ width:auto; }
 .weeks tr.part td{ background:#f7f8fa; color:#14385c; font-variant:small-caps; letter-spacing:.06em; font-weight:700; font-size:.85rem; }
-.weeks td.wk{ font-family:ui-monospace,Menlo,Consolas,monospace; font-weight:700; color:#14385c; text-align:center; width:76px; white-space:nowrap; }
-.weeks td.lk{ min-width:190px; }
+.weeks td.wk{ font-family:ui-monospace,Menlo,Consolas,monospace; font-weight:700; color:#14385c; text-align:center; width:68px; white-space:nowrap; }
+.weeks td.lk{ min-width:150px; }
 .weeks td.lk a{ display:block; text-decoration:none; margin:0 0 5px; white-space:normal; line-height:1.25; }
+.weeks td.study{ color:#2c3138; font-size:.82rem; line-height:1.35; }
+.weeks td.study .study-block{ display:block; margin:0 0 7px; }
+.weeks td.study .study-block i{ display:block; font-style:normal; font-variant:small-caps; letter-spacing:.05em; font-weight:700; font-size:.76rem; color:#14385c; margin:0 0 1px; }
+.weeks td.study a{ text-decoration:none; font-weight:700; }
+.weeks td.study a:hover{ text-decoration:underline; }
 .weeks .t b{ display:block; }
 .weeks .t span{ color:#5a626c; font-size:.86rem; }
 .weeks .t .lp{ display:block; margin-top:6px; line-height:1.35; }
