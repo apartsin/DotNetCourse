@@ -425,5 +425,140 @@
 
 <footer>Enterprise Software Engineering with C# and .NET: Architecture, Design Patterns, and AI-Enabled Systems &middot; HIT &middot; Advanced Course &middot; course materials</footer>
 
+<script>
+(() => {
+  const glossary = [
+    ["ASP.NET Core Identity", "https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity"],
+    ["Microsoft.Extensions.AI", "https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai"],
+    ["Entity Framework Core", "https://learn.microsoft.com/en-us/ef/core/"],
+    ["Azure Well-Architected Framework", "https://learn.microsoft.com/en-us/azure/well-architected/"],
+    ["Azure Architecture Framework", "https://learn.microsoft.com/en-us/azure/architecture/framework/"],
+    ["Azure App Service", "https://learn.microsoft.com/en-us/azure/app-service/overview"],
+    ["Application Insights", "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"],
+    ["Azure AI Search", "https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search"],
+    ["Azure Functions", "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"],
+    ["Azure.AI.OpenAI", "https://learn.microsoft.com/en-us/dotnet/api/overview/azure/ai.openai-readme"],
+    ["ASP.NET Core", "https://learn.microsoft.com/en-us/aspnet/core/"],
+    ["Semantic Kernel", "https://learn.microsoft.com/en-us/semantic-kernel/overview/"],
+    ["Clean Architecture", "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures"],
+    ["Domain-Driven Design", "https://martinfowler.com/bliki/DomainDrivenDesign.html"],
+    ["Software Architecture", "https://www.sei.cmu.edu/our-work/software-architecture/"],
+    ["OpenAI .NET SDK", "https://github.com/openai/openai-dotnet"],
+    ["Visual Studio Code", "https://code.visualstudio.com/"],
+    ["Visual Studio", "https://visualstudio.microsoft.com/vs/"],
+    ["Azure Service Bus", "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"],
+    ["Azure Key Vault", "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"],
+    ["Managed Identity", "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview"],
+    ["IHttpClientFactory", "https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory"],
+    ["HttpClientFactory", "https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory"],
+    ["IHostedService", "https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.ihostedservice"],
+    ["IMemoryCache", "https://learn.microsoft.com/en-us/dotnet/core/extensions/caching"],
+    ["ProblemDetails", "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/error-handling-api"],
+    ["FluentValidation", "https://docs.fluentvalidation.net/en/latest/"],
+    ["SQL Server", "https://www.microsoft.com/en-us/sql-server"],
+    ["PostgreSQL", "https://www.postgresql.org/about/"],
+    ["Azure SQL", "https://learn.microsoft.com/en-us/azure/azure-sql/"],
+    ["Azure Storage", "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction"],
+    ["Entra ID", "https://learn.microsoft.com/en-us/entra/fundamentals/whatis"],
+    ["Microsoft Learn", "https://learn.microsoft.com/"],
+    ["Swagger", "https://swagger.io/docs/specification/about/"],
+    ["OpenAPI", "https://www.openapis.org/"],
+    ["MediatR", "https://github.com/jbogard/MediatR"],
+    ["LINQPad", "https://www.linqpad.net/"],
+    ["NuGet", "https://learn.microsoft.com/en-us/nuget/what-is-nuget"],
+    ["GitHub", "https://github.com/about"],
+    ["Rider", "https://www.jetbrains.com/rider/"],
+    ["Polly", "https://www.pollydocs.org/"],
+    ["Coursera", "https://www.coursera.org/"],
+    ["OWASP API Security", "https://owasp.org/API-Security/"],
+    ["OWASP", "https://owasp.org/"],
+    ["REST", "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"],
+    ["JSON", "https://www.json.org/json-en.html"],
+    ["HTTP", "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"],
+    ["SQL", "https://www.iso.org/standard/76583.html"],
+    ["JWT", "https://jwt.io/introduction"],
+    ["API", "https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces"],
+    ["Web API", "https://learn.microsoft.com/en-us/aspnet/core/web-api/"],
+    ["DTO", "https://martinfowler.com/eaaCatalog/dataTransferObject.html"],
+    ["CQRS", "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs"],
+    ["C4", "https://c4model.com/"],
+    ["ADR", "https://adr.github.io/"],
+    ["SOLID", "https://learn.microsoft.com/en-us/archive/msdn-magazine/2008/june/patterns-in-practice-the-solid-principles"],
+    ["DDD", "https://martinfowler.com/bliki/DomainDrivenDesign.html"],
+    ["MVC", "https://developer.mozilla.org/en-US/docs/Glossary/MVC"],
+    ["EF Core", "https://learn.microsoft.com/en-us/ef/core/"],
+    ["C#", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+    [".NET", "https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet"],
+    ["AI", "https://www.ibm.com/topics/artificial-intelligence"]
+  ];
+
+  const terms = glossary
+    .sort((left, right) => right[0].length - left[0].length)
+    .map(([term, href]) => ({ term, href, pattern: new RegExp(`(^|[^A-Za-z0-9_.#])(${escapeRegExp(term)})(?=$|[^A-Za-z0-9_.#])`, "gi") }));
+  const skipTags = new Set(["A", "SCRIPT", "STYLE", "CODE"]);
+  const walker = document.createTreeWalker(document.querySelector(".wrap"), NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      let parent = node.parentElement;
+      while (parent) {
+        if (skipTags.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
+        parent = parent.parentElement;
+      }
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const textNodes = [];
+  while (walker.nextNode()) textNodes.push(walker.currentNode);
+  for (const node of textNodes) linkTerms(node);
+
+  function linkTerms(node) {
+    const text = node.nodeValue;
+    let cursor = 0;
+    const hits = [];
+    while (cursor < text.length) {
+      const hit = findNextHit(text, cursor);
+      if (!hit) break;
+      hits.push(hit);
+      cursor = hit.end;
+    }
+    if (!hits.length) return;
+    const fragment = document.createDocumentFragment();
+    cursor = 0;
+    for (const hit of hits) {
+      if (hit.start > cursor) fragment.append(text.slice(cursor, hit.start));
+      const link = document.createElement("a");
+      link.href = hit.href;
+      link.className = "term-link";
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.textContent = text.slice(hit.start, hit.end);
+      fragment.append(link);
+      cursor = hit.end;
+    }
+    if (cursor < text.length) fragment.append(text.slice(cursor));
+    node.parentNode.replaceChild(fragment, node);
+  }
+
+  function findNextHit(text, startAt) {
+    let best = null;
+    for (const item of terms) {
+      item.pattern.lastIndex = startAt;
+      const match = item.pattern.exec(text);
+      if (!match) continue;
+      const start = match.index + match[1].length;
+      const end = start + match[2].length;
+      if (!best || start < best.start || (start === best.start && end > best.end)) {
+        best = { start, end, href: item.href };
+      }
+    }
+    return best;
+  }
+
+  function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+})();
+</script>
+
 </body>
 </html>

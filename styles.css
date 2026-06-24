@@ -8,6 +8,7 @@ body{
 p, li, .step li, .timeline .dt, .selfcheck .ans{ text-align:justify; }
 .sub, .meta, .eyebrow, .lbl, .wbadge, .secttag, footer, .projmeta, .pager a{ text-align:left; hyphens:none; }
 a{ color:#14385c; }
+a.term-link{ font-weight:700; text-decoration-thickness:1px; text-underline-offset:2px; }
 code,.mono{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   background:#f4f5f7; padding:1px 5px; border-radius:4px; font-size:.92em; }
 
