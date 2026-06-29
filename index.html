@@ -44,11 +44,11 @@
   <h2>Course format</h2>
   <p>Each week is <b>4 contact hours</b>: a <b>2-hour lecture</b> for concepts, architecture, and design reasoning, and a <b>2-hour practice session</b> at the keyboard. Git and basic DevOps workflow are assumed. The practice session focuses on architecture increments, .NET implementation depth, and design review. The thirteen weeks form six parts: .NET Foundations for Enterprise Systems (weeks 1 to 2), API Contracts and Persistence (3 to 4), Enterprise Architecture and Design Tradeoffs (5 to 8), Domain Logic and Security Architecture (9 to 10), Integration and AI-Enabled Systems (11 to 12), and Final Architectural Defense (13). The running project is presented to the class three times, in the <b>Student Project Presentations</b>: a proposal (week 5), an interim review (week 8), and a final project defense (week 13).</p>
   <div class="layers">
-    <div class="layer l1"><span class="nm">Modern .NET</span><span class="ds">.NET runtime and SDK, modern C#, records, generics, LINQ, async, options, dependency injection, configuration.</span></div>
+    <div class="layer l1"><span class="nm">Modern .NET</span><span class="ds">.NET runtime and SDK, modern C#, records, generics, LINQ, async, reflection, serialization, options, dependency injection, configuration.</span></div>
     <div class="layer l2"><span class="nm">API &amp; Data</span><span class="ds">ASP.NET Core Web API, DTOs, ProblemDetails, EF Core, migrations, concurrency, transactions.</span></div>
     <div class="layer l3"><span class="nm">Architecture</span><span class="ds">Quality attributes, layered architecture, Clean Architecture, modular monoliths, ADRs.</span></div>
-    <div class="layer l4"><span class="nm">Patterns</span><span class="ds">Repository, Unit of Work, Factory, Strategy, Adapter, Decorator, Mediator, CQRS, Outbox.</span></div>
-    <div class="layer l5"><span class="nm">Integration</span><span class="ds">HttpClientFactory, hosted services, caching, background work, idempotency, resilience.</span></div>
+    <div class="layer l4"><span class="nm">Patterns</span><span class="ds">GoF Creational, Structural, and Behavioral patterns, Repository, Unit of Work, Mediator, CQRS, Outbox.</span></div>
+    <div class="layer l5"><span class="nm">Integration</span><span class="ds">HttpClientFactory, hosted services, caching, background work, threading, async concurrency, idempotency, resilience.</span></div>
     <div class="layer l6"><span class="nm">AI APIs</span><span class="ds">Microsoft.Extensions.AI, Semantic Kernel, OpenAI .NET SDK, embeddings, tool calling, evaluation.</span></div>
   </div>
 
@@ -59,21 +59,21 @@
     <div class="ocard"><span class="n">2</span><span class="oi">&#128279;</span><span class="ot">Design RESTful APIs with explicit DTOs, validation, versioning, and error handling.</span></div>
     <div class="ocard"><span class="n">3</span><span class="oi">&#129518;</span><span class="ot">Use Entity Framework Core for persistence, migrations, relationships, and database access.</span></div>
     <div class="ocard"><span class="n">4</span><span class="oi">&#127959;&#65039;</span><span class="ot">Structure applications with layered architecture, Clean Architecture, and modular design.</span></div>
-    <div class="ocard"><span class="n">5</span><span class="oi">&#128736;&#65039;</span><span class="ot">Apply enterprise design patterns where they clarify boundaries and reduce coupling.</span></div>
+    <div class="ocard"><span class="n">5</span><span class="oi">&#128736;&#65039;</span><span class="ot">Apply GoF and enterprise design patterns where they clarify boundaries and reduce coupling.</span></div>
     <div class="ocard"><span class="n">6</span><span class="oi">&#128202;</span><span class="ot">Evaluate architecture using quality attributes, scenarios, ADRs, and explicit tradeoffs.</span></div>
     <div class="ocard"><span class="n">7</span><span class="oi">&#128274;</span><span class="ot">Design security architecture with authentication, authorization, validation, auditability, and error contracts.</span></div>
     <div class="ocard"><span class="n">8</span><span class="oi">&#129514;</span><span class="ot">Use contract thinking and architecture checks to protect business logic, API behavior, and dependency rules.</span></div>
-    <div class="ocard"><span class="n">9</span><span class="oi">&#128257;</span><span class="ot">Use .NET integration capabilities such as HttpClientFactory, hosted services, caching, resilience, and background work.</span></div>
+    <div class="ocard"><span class="n">9</span><span class="oi">&#128257;</span><span class="ot">Use .NET platform capabilities such as reflection, serialization, HttpClientFactory, hosted services, caching, resilience, async concurrency, and background work.</span></div>
     <div class="ocard"><span class="n">10</span><span class="oi">&#129504;</span><span class="ot">Integrate AI APIs and .NET AI libraries behind replaceable, governable application boundaries.</span></div>
-    <div class="ocard"><span class="n">11</span><span class="oi">&#128220;</span><span class="ot">Document architecture decisions with diagrams, ADRs, pattern explanations, and tradeoffs.</span></div>
+    <div class="ocard"><span class="n">11</span><span class="oi">&#128220;</span><span class="ot">Document architecture decisions with UML, C4 diagrams, ADRs, pattern explanations, and tradeoffs.</span></div>
     <div class="ocard"><span class="n">12</span><span class="oi">&#127891;</span><span class="ot">Defend a complete enterprise application from use case to implementation detail.</span></div>
   </div>
 
   <h2>Industry alignment</h2>
   <p>Current .NET backend roles consistently ask for C#, ASP.NET Core, REST APIs, Entity Framework Core, SQL, secure API development, third-party integration, Azure or cloud familiarity, scalable service design, and maintainable architecture. Senior roles add design patterns, microservice or modular boundaries, caching, background processing, messaging, observability, and architecture tradeoff reasoning.</p>
   <div class="ocards">
-    <div class="ocard"><span class="oi">&#9881;&#65039;</span><span class="ot"><b>Added .NET depth.</b> Options pattern, configuration, DI lifetimes, HttpClientFactory, hosted services, caching, resilience, ProblemDetails, EF concurrency, and transactions.</span></div>
-    <div class="ocard"><span class="oi">&#127959;&#65039;</span><span class="ot"><b>Added architecture depth.</b> Quality attributes, ADRs, modular monoliths, vertical slices, service boundaries, integration contracts, and architecture fitness checks.</span></div>
+    <div class="ocard"><span class="oi">&#9881;&#65039;</span><span class="ot"><b>Added .NET depth.</b> Options pattern, configuration, DI lifetimes, reflection, serialization, HttpClientFactory, hosted services, caching, resilience, ProblemDetails, EF concurrency, and transactions.</span></div>
+    <div class="ocard"><span class="oi">&#127959;&#65039;</span><span class="ot"><b>Added architecture depth.</b> UML use-case, class, and sequence diagrams, quality attributes, ADRs, modular monoliths, vertical slices, service boundaries, integration contracts, and architecture fitness checks.</span></div>
     <div class="ocard"><span class="oi">&#128257;</span><span class="ot"><b>Added Azure integration depth.</b> App Service, Azure SQL, Storage, Key Vault, Entra ID, Managed Identity, Service Bus, Functions, Application Insights, and cloud-aware boundaries.</span></div>
     <div class="ocard"><span class="oi">&#128274;</span><span class="ot"><b>Added security depth.</b> Threat modelling, policy-based authorization, API error contracts, audit trails, data exposure, and OWASP API security concerns.</span></div>
   </div>
@@ -83,8 +83,11 @@
   <div class="ocards">
     <div class="ocard"><span class="oi">&#127959;&#65039;</span><span class="ot"><b>Quality attributes.</b> Modifiability, scalability, reliability, security, observability, deployability, and cost as architecture drivers, not afterthoughts.</span></div>
     <div class="ocard"><span class="oi">&#129513;</span><span class="ot"><b>Coupling and cohesion.</b> Afferent and efferent dependencies, instability, abstraction, dependency inversion, and why boundaries reduce change cost.</span></div>
+    <div class="ocard"><span class="oi">&#128451;&#65039;</span><span class="ot"><b>Modelling languages.</b> UML use-case, class, and sequence diagrams as compact ways to reason about requirements, static structure, and runtime collaboration.</span></div>
     <div class="ocard"><span class="oi">&#128220;</span><span class="ot"><b>Contracts and invariants.</b> API contracts, domain invariants, preconditions, postconditions, consistency boundaries, and failure contracts.</span></div>
+    <div class="ocard"><span class="oi">&#128295;</span><span class="ot"><b>Pattern theory.</b> GoF categories, intent, forces, consequences, and the difference between reusable design knowledge and unnecessary ceremony.</span></div>
     <div class="ocard"><span class="oi">&#128257;</span><span class="ot"><b>Distributed-system principles.</b> Latency, partial failure, idempotency, retries, timeouts, eventual consistency, queues, and exactly-once misconceptions.</span></div>
+    <div class="ocard"><span class="oi">&#9201;&#65039;</span><span class="ot"><b>Concurrency theory.</b> Threads, tasks, synchronization, cancellation, async I/O, UI thread affinity, and why non-blocking code is not automatically parallel code.</span></div>
     <div class="ocard"><span class="oi">&#128274;</span><span class="ot"><b>Security theory.</b> Threat modelling, least privilege, trust boundaries, claims, policies, secrets, auditability, and data exposure.</span></div>
     <div class="ocard"><span class="oi">&#129504;</span><span class="ot"><b>AI system theory.</b> Non-determinism, context construction, evaluation sets, model risk, prompt ownership, tool-use boundaries, and human accountability.</span></div>
   </div>
@@ -122,9 +125,9 @@
         <td class="weekcell">
           <div class="weektop"><span class="weeknum">Week 1</span></div>
           <div class="weektopic"><b>Introduction to Enterprise Software Engineering with .NET</b>
-          <span class="lp"><i>Lecture</i> Enterprise systems, quality attributes, .NET ecosystem, solution structure, business domains, use cases.</span>
-          <span class="lp pr"><i>Practice</i> Create the initial solution architecture; choose a domain; draft use cases and quality-attribute scenarios.</span>
-          <span class="lp tl"><i>Tools</i> .NET SDK &middot; Visual Studio / Rider / VS Code &middot; C4 sketches &middot; ADR template</span></div>
+          <span class="lp"><i>Lecture</i> Enterprise systems, quality attributes, .NET ecosystem, solution structure, business domains, use cases, UML use-case diagrams.</span>
+          <span class="lp pr"><i>Practice</i> Create the initial solution architecture; choose a domain; draft use cases, a UML use-case diagram, and quality-attribute scenarios.</span>
+          <span class="lp tl"><i>Tools</i> .NET SDK &middot; Visual Studio / Rider / VS Code &middot; UML use-case diagram &middot; C4 sketches &middot; ADR template</span></div>
           <div class="weekrule"></div>
           <div class="weeklinks"><a href="lessons/week01.html">Lesson plan</a><a href="lessons/week01.html#practice">Practice</a><a href="https://learn.microsoft.com/en-us/shows/back-end-web-development-with-dotnet-for-beginners/what-is-aspnet-core-back-end">Watch: ASP.NET Core</a><a href="https://www.youtube.com/playlist?list=PL3LHCvSXd3vr4uvpvkYGT3muNy_lXV3wT">Watch Hebrew: C# .NET</a></div>
           <div class="weekrule"></div>
@@ -191,9 +194,9 @@
         <td class="weekcell">
           <div class="weektop"><span class="weeknum">Week 6</span></div>
           <div class="weektopic"><b>Architecture Styles and Quality Attributes</b>
-          <span class="lp"><i>Lecture</i> Layered, Clean Architecture, vertical slice, modular monolith, quality attributes, fitness functions.</span>
-          <span class="lp pr"><i>Practice</i> Reorganize the project around chosen architecture; write ADRs and quality-attribute scenarios.</span>
-          <span class="lp tl"><i>Tools</i> C4 diagrams &middot; ADRs &middot; dependency rules &middot; architecture checks</span></div>
+          <span class="lp"><i>Lecture</i> Layered, Clean Architecture, vertical slice, modular monolith, quality attributes, UML class and sequence diagrams, fitness functions.</span>
+          <span class="lp pr"><i>Practice</i> Reorganize the project around chosen architecture; draw C4 plus UML class and sequence diagrams; write ADRs and quality-attribute scenarios.</span>
+          <span class="lp tl"><i>Tools</i> C4 diagrams &middot; UML class diagrams &middot; UML sequence diagrams &middot; ADRs &middot; dependency rules &middot; architecture checks</span></div>
           <div class="weekrule"></div>
           <div class="weeklinks"><a href="lessons/week06.html">Lesson plan</a><a href="lessons/week06.html#practice">Practice</a><a href="https://learn.microsoft.com/en-us/shows/dotnetconf-2021/clean-architecture-with-aspnet-core-6">Watch: Clean Architecture</a><a href="https://www.youtube.com/watch?v=ksqeTyX1Pe4">Watch Hebrew: MVC architecture</a></div>
           <div class="weekrule"></div>
@@ -203,23 +206,23 @@
       <tr>
         <td class="weekcell">
           <div class="weektop"><span class="weeknum">Week 7</span></div>
-          <div class="weektopic"><b>Enterprise Design Patterns and Integration Patterns</b>
-          <span class="lp"><i>Lecture</i> Repository, Unit of Work, Factory, Strategy, Adapter, Decorator, Mediator, CQRS, Outbox, idempotency.</span>
-          <span class="lp pr"><i>Practice</i> Implement patterns with executable examples; document why each pattern fits the use case and quality goals.</span>
-          <span class="lp tl"><i>Tools</i> DI container &middot; MediatR &middot; interfaces &middot; pattern notes</span></div>
+          <div class="weektopic"><b>GoF Design Patterns and Enterprise Integration Patterns</b>
+          <span class="lp"><i>Lecture</i> GoF Creational, Structural, and Behavioral categories; Factory, Abstract Factory, Builder, Singleton, Adapter, Decorator, Facade, Proxy, Strategy, Command, Observer, Mediator, Repository, Unit of Work, CQRS, Outbox, idempotency.</span>
+          <span class="lp pr"><i>Practice</i> Pattern drills: implement one creational, one structural, and one behavioral pattern with executable examples; document why each pattern fits the use case and quality goals.</span>
+          <span class="lp tl"><i>Tools</i> DI container &middot; MediatR &middot; interfaces &middot; UML sequence sketch &middot; pattern notes</span></div>
           <div class="weekrule"></div>
           <div class="weeklinks"><a href="lessons/week07.html">Lesson plan</a><a href="lessons/week07.html#practice">Practice</a><a href="https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/design-patterns-strategy">Watch: Strategy Pattern</a><a href="https://www.youtube.com/watch?v=WxRHA9PnYSg">Watch Hebrew: Factory Pattern</a></div>
           <div class="weekrule"></div>
-          <div class="weekstudy"><span class="study-block"><i>Docs</i> <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/">DDD and CQRS patterns</a>; <a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-guidelines">DI guidelines</a></span><span class="study-block"><i>Tutorial</i> <a href="https://github.com/jbogard/MediatR/wiki">MediatR documentation</a></span><span class="study-block"><i>Reading</i> <a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/">Design Patterns</a>: Factory Method, Strategy, Adapter, Decorator, Mediator.</span></div>
+          <div class="weekstudy"><span class="study-block"><i>Docs</i> <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/">DDD and CQRS patterns</a>; <a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-guidelines">DI guidelines</a></span><span class="study-block"><i>Tutorial</i> <a href="https://github.com/jbogard/MediatR/wiki">MediatR documentation</a></span><span class="study-block"><i>Reading</i> <a href="https://www.oreilly.com/library/view/design-patterns-elements/0201633612/">Design Patterns</a>: Creational, Structural, Behavioral overview; Factory Method, Abstract Factory, Builder, Adapter, Decorator, Facade, Proxy, Strategy, Command, Observer, Mediator.</span></div>
         </td>
       </tr>
       <tr>
         <td class="weekcell">
           <div class="weektop"><span class="weeknum">Week 8</span></div>
           <div class="weektopic"><b>Midterm Presentations and Clean Architecture</b>
-          <span class="lp"><i>Lecture</i> Dependency rules, use cases, ports and adapters, modular monoliths, package boundaries.</span>
+          <span class="lp"><i>Lecture</i> Dependency rules, use cases, ports and adapters, modular monoliths, package boundaries, UML class and sequence diagram review.</span>
           <span class="pres">&#127908; Student Project Presentation 2 &middot; Interim</span>
-          <span class="lp tl"><i>Tools</i> Clean Architecture &middot; C4 diagrams &middot; ADRs</span></div>
+          <span class="lp tl"><i>Tools</i> Clean Architecture &middot; C4 diagrams &middot; UML class and sequence diagrams &middot; ADRs</span></div>
           <div class="weekrule"></div>
           <div class="weeklinks"><a href="lessons/week08.html">Lesson plan</a><a href="lessons/week08.html#practice">Presentation brief</a><a href="https://learn.microsoft.com/en-us/shows/dotnetconf-2021/clean-architecture-with-aspnet-core-6">Watch: Architecture</a><a href="https://www.youtube.com/watch?v=QpOtg8Y6NSU">Watch Hebrew: .NET Conf Israel</a></div>
           <div class="weekrule"></div>
@@ -272,14 +275,14 @@
       <tr>
         <td class="weekcell">
           <div class="weektop"><span class="weeknum">Week 12</span></div>
-          <div class="weektopic"><b>.NET Integration Depth and AI-Enabled Systems</b>
-          <span class="lp"><i>Lecture</i> HttpClientFactory, resilience, hosted services, caching, AI clients, streaming, embeddings, tool calling, evaluation.</span>
-          <span class="lp pr"><i>Practice</i> Add an integration boundary, background workflow, or optional AI-backed use case with clear failure handling.</span>
-          <span class="lp tl"><i>Tools</i> HttpClientFactory &middot; Polly &middot; IHostedService &middot; IMemoryCache &middot; Microsoft.Extensions.AI &middot; Semantic Kernel</span></div>
+          <div class="weektopic"><b>.NET Platform Depth, Concurrency, and AI-Enabled Systems</b>
+          <span class="lp"><i>Lecture</i> Threads, tasks, async/await, cancellation, synchronization, UI thread affinity, HttpClientFactory, resilience, hosted services, caching, reflection, serialization, data binding, AI clients, streaming, embeddings, tool calling, evaluation.</span>
+          <span class="lp pr"><i>Practice</i> Add an integration boundary, background workflow, concurrency-safe async operation, serialization or reflection example, or optional AI-backed use case with clear failure handling.</span>
+          <span class="lp tl"><i>Tools</i> Task Parallel Library &middot; async/await &middot; System.Text.Json &middot; Reflection &middot; HttpClientFactory &middot; Polly &middot; IHostedService &middot; IMemoryCache &middot; Microsoft.Extensions.AI &middot; Semantic Kernel</span></div>
           <div class="weekrule"></div>
           <div class="weeklinks"><a href="lessons/week12.html">Lesson plan</a><a href="lessons/week12.html#practice">Practice</a><a href="https://learn.microsoft.com/en-us/shows/lets-learn-dotnet/lets-learn-dotnet-semantic-kernel">Watch: Semantic Kernel</a><a href="https://learn.microsoft.com/he-il/training/course-videos-on-shows">Watch Hebrew: Microsoft Learn videos</a></div>
           <div class="weekrule"></div>
-          <div class="weekstudy"><span class="study-block"><i>Docs</i> <a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory">IHttpClientFactory</a>; <a href="https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai">Microsoft.Extensions.AI</a>; <a href="https://learn.microsoft.com/en-us/semantic-kernel/">Semantic Kernel</a></span><span class="study-block"><i>Tutorial</i> <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide">Semantic Kernel quick start</a></span><span class="study-block"><i>Reading</i> <a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">Designing Data-Intensive Applications</a>, reliability and dataflow.</span></div>
+          <div class="weekstudy"><span class="study-block"><i>Docs</i> <a href="https://learn.microsoft.com/en-us/dotnet/standard/threading/">Threading</a>; <a href="https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/">async programming</a>; <a href="https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview">System.Text.Json</a>; <a href="https://learn.microsoft.com/en-us/dotnet/fundamentals/reflection/reflection">reflection</a>; <a href="https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory">IHttpClientFactory</a>; <a href="https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai">Microsoft.Extensions.AI</a>; <a href="https://learn.microsoft.com/en-us/semantic-kernel/">Semantic Kernel</a></span><span class="study-block"><i>Tutorial</i> <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide">Semantic Kernel quick start</a></span><span class="study-block"><i>Reading</i> <a href="https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/">Designing Data-Intensive Applications</a>, reliability and dataflow.</span></div>
         </td>
       </tr>
 
@@ -288,9 +291,9 @@
         <td class="weekcell">
           <div class="weektop"><span class="weeknum">Week 13</span></div>
           <div class="weektopic"><b>Final Student Presentations</b>
-          <span class="lp"><i>Lecture</i> Final demo, architecture review, code quality, integration design, design decisions, lessons learned.</span>
+          <span class="lp"><i>Lecture</i> Final demo, architecture review, UML and C4 diagram review, code quality, integration design, design decisions, lessons learned.</span>
           <span class="pres">&#127908; Student Project Presentation 3 &middot; Final (with oral defense)</span>
-          <span class="lp tl"><i>Tools</i> architecture document &middot; ADRs &middot; quality evidence &middot; final slides</span></div>
+          <span class="lp tl"><i>Tools</i> architecture document &middot; UML diagrams &middot; C4 diagrams &middot; ADRs &middot; quality evidence &middot; final slides</span></div>
           <div class="weekrule"></div>
           <div class="weeklinks"><a href="lessons/week13.html">Lesson plan</a><a href="lessons/week13.html#practice">Presentation brief</a><a href="https://learn.microsoft.com/en-us/shows/dotnetconf-2021/clean-architecture-with-aspnet-core-6">Watch: Review</a><a href="https://www.youtube.com/watch?v=dRnRZDqKD0Y">Watch Hebrew: final project</a></div>
           <div class="weekrule"></div>
@@ -411,11 +414,11 @@
   <h2 id="tools">Tools and resources</h2>
   <p>The toolchain mirrors the weekly schedule and keeps attention on .NET, enterprise architecture, and defensible engineering decisions.</p>
   <ul class="clean">
-    <li><b>C# and .NET:</b> .NET SDK, ASP.NET Core, modern C# language features, dependency injection, configuration.</li>
+    <li><b>C# and .NET:</b> .NET SDK, ASP.NET Core, modern C# language features, dependency injection, configuration, reflection, serialization, async/await, and threading.</li>
     <li><b>Data access:</b> Entity Framework Core, SQL Server or PostgreSQL, migrations, repositories, query design.</li>
     <li><b>API design:</b> REST, DTOs, validation, Swagger and OpenAPI, global error handling, problem details.</li>
-    <li><b>Architecture:</b> layered architecture, Clean Architecture, modular monoliths, C4 diagrams, ADRs.</li>
-    <li><b>Design patterns:</b> Repository, Unit of Work, Factory, Strategy, Adapter, Decorator, Mediator, CQRS, Specification.</li>
+    <li><b>Architecture:</b> layered architecture, Clean Architecture, modular monoliths, UML use-case, class, and sequence diagrams, C4 diagrams, ADRs.</li>
+    <li><b>Design patterns:</b> GoF Creational, Structural, and Behavioral patterns; Factory, Abstract Factory, Builder, Singleton, Adapter, Facade, Decorator, Proxy, Strategy, Command, Observer, Mediator, Repository, Unit of Work, CQRS, Specification.</li>
     <li><b>Azure enterprise integration:</b> Azure App Service, Azure SQL, Storage, Key Vault, Entra ID, Managed Identity, Service Bus, Functions, Application Insights, plus HttpClientFactory and resilience.</li>
     <li><b>AI APIs and libraries:</b> Microsoft.Extensions.AI, Semantic Kernel, OpenAI .NET SDK, Azure.AI.OpenAI, Azure AI Search, evaluation libraries.</li>
     <li><b>AI assistant:</b> part of the toolkit, expected for exploration and review, with full student responsibility for submitted work.</li>
@@ -429,6 +432,7 @@
 (() => {
   const glossary = [
     ["ASP.NET Core Identity", "https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity"],
+    ["Task Parallel Library", "https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-parallel-library-tpl"],
     ["Microsoft.Extensions.AI", "https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai"],
     ["Entity Framework Core", "https://learn.microsoft.com/en-us/ef/core/"],
     ["Azure Well-Architected Framework", "https://learn.microsoft.com/en-us/azure/well-architected/"],
@@ -442,6 +446,7 @@
     ["Semantic Kernel", "https://learn.microsoft.com/en-us/semantic-kernel/overview/"],
     ["Clean Architecture", "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures"],
     ["Domain-Driven Design", "https://martinfowler.com/bliki/DomainDrivenDesign.html"],
+    ["System.Text.Json", "https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview"],
     ["Software Architecture", "https://www.sei.cmu.edu/our-work/software-architecture/"],
     ["OpenAI .NET SDK", "https://github.com/openai/openai-dotnet"],
     ["Visual Studio Code", "https://code.visualstudio.com/"],
@@ -471,12 +476,15 @@
     ["Polly", "https://www.pollydocs.org/"],
     ["Coursera", "https://www.coursera.org/"],
     ["OWASP API Security", "https://owasp.org/API-Security/"],
+    ["GoF", "https://en.wikipedia.org/wiki/Design_Patterns"],
+    ["UML", "https://www.uml.org/what-is-uml.htm"],
     ["OWASP", "https://owasp.org/"],
     ["REST", "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"],
     ["JSON", "https://www.json.org/json-en.html"],
     ["HTTP", "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"],
     ["SQL", "https://www.iso.org/standard/76583.html"],
     ["JWT", "https://jwt.io/introduction"],
+    ["async/await", "https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/"],
     ["API", "https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces"],
     ["Web API", "https://learn.microsoft.com/en-us/aspnet/core/web-api/"],
     ["DTO", "https://martinfowler.com/eaaCatalog/dataTransferObject.html"],
